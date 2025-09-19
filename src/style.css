@@ -1,0 +1,132 @@
+/**
+ * Universal Reader Mode - Styles
+ * 
+ * This CSS file contains the styles for the reader mode interface
+ * including theme variables, typography, and layout styles.
+ * 
+ * @version 1.0.0
+ * @author 010io
+ */
+
+/* CSS Custom Properties / Variables */
+:root {
+  /* Theme Colors - Light Mode */
+  --reader-bg-light: #ffffff;
+  --reader-text-light: #1a1a1a;
+  --reader-secondary-light: #666666;
+  --reader-border-light: #e0e0e0;
+  --reader-highlight-light: #f5f5f5;
+  
+  /* Theme Colors - Dark Mode */
+  --reader-bg-dark: #1e1e1e;
+  --reader-text-dark: #e0e0e0;
+  --reader-secondary-dark: #b0b0b0;
+  --reader-border-dark: #404040;
+  --reader-highlight-dark: #2a2a2a;
+  
+  /* Typography */
+  --reader-font-family: 'Georgia', 'Times New Roman', serif;
+  --reader-font-size: 18px;
+  --reader-line-height: 1.6;
+  --reader-heading-font: 'Helvetica', 'Arial', sans-serif;
+  
+  /* Layout */
+  --reader-max-width: 800px;
+  --reader-padding: 2rem;
+  --reader-margin: 1rem;
+  
+  /* Animation */
+  --reader-transition: all 0.3s ease;
+  
+  /* Z-index layers */
+  --reader-z-content: 9999;
+  --reader-z-controls: 10000;
+  --reader-z-modal: 10001;
+}
+
+/* Reader Mode Base Styles */
+.universal-reader-mode {
+  /* TODO: Add reader mode container styles */
+}
+
+/* Reader Content Styles */
+.reader-content {
+  /* TODO: Add content area styles */
+}
+
+/* Reader Controls */
+.reader-controls {
+  /* TODO: Add control panel styles */
+}
+
+/* Typography Styles */
+.reader-text {
+  /* TODO: Add text formatting styles */
+}
+
+/* Theme Toggle Styles */
+.reader-theme-toggle {
+  /* TODO: Add theme toggle button styles */
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* TODO: Apply dark theme variables by default */
+  }
+}
+
+/* Dark mode class override */
+.reader-dark-mode {
+  /* TODO: Add dark mode specific styles */
+}
+
+/* Light mode class override */
+.reader-light-mode {
+  /* TODO: Add light mode specific styles */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  :root {
+    --reader-font-size: 16px;
+    --reader-padding: 1rem;
+    --reader-margin: 0.5rem;
+  }
+  
+  /* TODO: Add mobile-specific styles */
+}
+
+/* Print Styles */
+@media print {
+  .reader-controls {
+    display: none !important;
+  }
+  
+  /* TODO: Add print-optimized styles */
+}
+
+/* Animation Classes */
+.reader-fade-in {
+  /* TODO: Add fade in animation */
+}
+
+.reader-slide-in {
+  /* TODO: Add slide in animation */
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --reader-border-light: #000000;
+    --reader-border-dark: #ffffff;
+  }
+}
